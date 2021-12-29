@@ -175,6 +175,10 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.home__contact:hover {
+  background-color: var(--color-dark-pink);
+}
+
 /* Section common */
 .section {
   text-align: center;
@@ -370,6 +374,7 @@ p {
   font-size: var(--font-regular);
   padding: 8px 48px;
   margin: 3px;
+  position: relative;
 }
 
 .category__btn.selected,
@@ -381,7 +386,7 @@ p {
 .category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
-  top: 0;
+  top: 8px;
 }
 
 .category__count {
@@ -392,9 +397,9 @@ p {
   height: 18px;
   line-height: 18px;
   display: inline-block;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 16px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -454,7 +459,7 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-dark-pink);
+  color: var(--color-pink);
 }
 
 .project__description span {
@@ -576,8 +581,19 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
   .navbar__toggle-btn {
     display: block;
+    font-size: var(--font-medium);
+    right: 16px;
   }
 
   #navbar {
@@ -602,24 +618,67 @@ p {
     display: block;
   }
 
+  .section {
+    padding: 16px;
+  }
+
+  .home__contact {
+    border: 1px solid var(--color-brown);
+  }
+
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
 
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   .skillset {
     flex-direction: column;
   }
 
+  .category__btn {
+    width: 100%;
+  }
+
   .project {
     flex-grow: 1;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial:nth-child(2) {
+    flex-direction: column-reverse;
   }
 
   .testimonial__avatar {
     width: 100px;
     height: 100px;
+    margin-left: 40px;
   }
+
+  .testimonial__speech-bubble {
+    margin-top: 10px;
+  }
+
+  .testimonial__avatar:nth-child(2) {
+    margin-right: 40px;
+  }
+
+  .arrow-up {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    right: 16px;
+    bottom: 16px;;
+  }
+
 }
