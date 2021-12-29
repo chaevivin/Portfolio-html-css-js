@@ -21,7 +21,7 @@ navbarMenu.addEventListener('click', (event) => {
 	if (link == null) {
 		return;
 	}
-
+    navbarMenu.classList.remove('open');
 	scrollIntoView(link);
 });
 
@@ -36,7 +36,6 @@ const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 
 document.addEventListener('scroll', () => {
-    console.log(1 - (window.scrollY / homeHeight));
     home.style.opacity = 1 - (window.scrollY / homeHeight);
 });
 
@@ -87,6 +86,13 @@ workBtnContainer.addEventListener('click', (e) => {
 
         projectContainer.classList.remove('animate-out');
     }, 300);
+});
+
+// Responsive navbar header
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
 });
 
 function scrollIntoView(selector) {
