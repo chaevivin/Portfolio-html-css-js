@@ -54,39 +54,69 @@ arrowUp.addEventListener('click', () => {
 });
 
 // Projects filtering
-const workBtnContainer = document.querySelector('.work__categories');
-const projectContainer = document.querySelector('.work__projects');
-const projects = document.querySelectorAll('.project');
+// const workBtnContainer = document.querySelector('.work__categories');
+// const projectContainer = document.querySelector('.work__projects');
+// const projects = document.querySelectorAll('.project');
 
-workBtnContainer.addEventListener('click', (e) => {
-    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
-    if(filter == null) {
-        return;
-    }
+// workBtnContainer.addEventListener('click', (e) => {
+//     const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+//     if(filter == null) {
+//         return;
+//     }
 
-    // Remove selection from the previous item and select the new one
-    const active = document.querySelector('.category__btn.selected');
-    active.classList.remove('selected');
-    const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
-    e.target.classList.add('selected');
-
-    projectContainer.classList.add('animate-out');
-
-    setTimeout(() => {
-        projects.forEach((project) => {
-            console.log(project.dataset.type);
-    
-            if(filter === '*' || filter === project.dataset.type) {
-                project.classList.remove('invisible');
-            }
-            else {
-                project.classList.add('invisible');
-            }
-        });
-
-        projectContainer.classList.remove('animate-out');
-    }, 300);
+// Modal
+document.querySelector(".openModalBtn1").addEventListener("click", (e) => {
+    console.log("open group project 1");
+    document.querySelector(".work__modal1").classList.remove("modal__hidden");
 });
+
+document.querySelector(".closeModalBtn1").addEventListener("click", (e) => {
+    console.log("close group project 1");
+    document.querySelector(".work__modal1").classList.add("modal__hidden");
+});
+
+document.querySelector(".openModalBtn2").addEventListener("click", (e) => {
+    console.log("open group project 2");
+    document.querySelector(".work__modal2").classList.remove("modal__hidden");
+});
+
+document.querySelector(".closeModalBtn2").addEventListener("click", (e) => {
+    console.log("close group project 2");
+    document.querySelector(".work__modal2").classList.add("modal__hidden");
+});
+
+document.querySelector(".openModalBtn3").addEventListener("click", (e) => {
+    console.log("open group project 3");
+    document.querySelector(".work__modal3").classList.remove("modal__hidden");
+});
+
+document.querySelector(".closeModalBtn3").addEventListener("click", (e) => {
+    console.log("close group project 3");
+    document.querySelector(".work__modal3").classList.add("modal__hidden");
+});
+
+// Remove selection from the previous item and select the new one
+// const active = document.querySelector('.category__btn.selected');
+// active.classList.remove('selected');
+// const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+// e.target.classList.add('selected');
+
+// projectContainer.classList.add('animate-out');
+
+// setTimeout(() => {
+//     projects.forEach((project) => {
+//         console.log(project.dataset.type);
+
+//         if(filter === '*' || filter === project.dataset.type) {
+//             project.classList.remove('invisible');
+//         }
+//         else {
+//             project.classList.add('invisible');
+//         }
+//     });
+
+//     projectContainer.classList.remove('animate-out');
+// }, 300);
 
 // Responsive navbar header
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
@@ -99,9 +129,7 @@ navbarToggleBtn.addEventListener('click', () => {
 const sectionIds = [
     '#home',
     '#about',
-    '#skills',
     '#myWork',
-    '#testimonials',
     '#contact', 
 ];
 
