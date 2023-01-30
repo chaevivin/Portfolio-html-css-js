@@ -597,6 +597,10 @@ p {
   font-size: var(--font-micro);
 }
 
+.modal__flex a {
+  text-decoration: underline;
+}
+
 .modal__mark {
   width: 80px;
   color: var(--color-light-grey);
