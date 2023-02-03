@@ -499,7 +499,7 @@ p {
   box-shadow: 0px 20px 20px 0px #826b6b;
   border-radius: var(--size-border-radius);
   border: 1px solid var(--color-brown);
-  width: 80%;
+  width: 1000px;
   height: 1250px;
   position: relative;
   padding: 50px;
@@ -510,7 +510,7 @@ p {
   box-shadow: 0px 20px 20px 0px #826b6b;
   border-radius: var(--size-border-radius);
   border: 1px solid var(--color-brown);
-  width: 80%;
+  width: 1000px;
   height: 1200px;
   position: relative;
   padding: 50px;
@@ -521,7 +521,7 @@ p {
   box-shadow: 0px 20px 20px 0px #826b6b;
   border-radius: var(--size-border-radius);
   border: 1px solid var(--color-brown);
-  width: 80%;
+  width: 1000px;
   height: 850px;
   position: relative;
   padding: 50px;
