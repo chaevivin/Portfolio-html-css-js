@@ -223,6 +223,11 @@ p {
   margin-bottom: 30px;
 }
 
+.about__hover {
+  color: var(--color-dark-pink);
+  margin-bottom: 15px;
+}
+
 .about__me {
   margin-left:  auto;
   margin-right: auto;
