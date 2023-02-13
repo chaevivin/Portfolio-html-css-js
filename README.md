@@ -1,4 +1,6 @@
 <div align="center">
+    <h1>React로 수정중</h1>
+    <br>
     <img src="https://user-images.githubusercontent.com/83055813/215501680-3cfe536a-0809-47aa-adf4-9ced73c0c4a4.gif" />
     <p> Update ver.</p>
     <br>
