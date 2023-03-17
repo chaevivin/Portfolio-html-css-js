@@ -3,67 +3,67 @@ import React from 'react';
 export default function AboutCard() {
   return (
     <div>
-      <div class="about__me">
-        <div class="about__flip">
-          <div class="about__front">
-            <p class="about__title">ID CARD</p>
-            <hr class="about__hr" />
-            <div class="about__frontBox">
-              <div class="info__box">
-                <div class="me__img"></div>
-                <div class="me__info">
-                  <p class="me__info__name about__small">정채빈</p>
-                  <p class="me__info__nameEng">Jeong Chae-Been</p>
+      <div className="about__me">
+        <div className="about__flip">
+          <div className="about__front">
+            <p className="about__title">ID CARD</p>
+            <hr className="about__hr" />
+            <div className="about__frontBox">
+              <div className="info__box">
+                <div className="me__img"></div>
+                <div className="me__info">
+                  <p className="me__info__name about__small">정채빈</p>
+                  <p className="me__info__nameEng">Jeong Chae-Been</p>
                 </div>
               </div>
-              <div class="me__record">
-                <div class="myEmail me__margin">
-                  <p class="myEmail__title record__mark">EMAIL</p>
-                  <p class="about__small">chaevivin@gmail.com</p>
+              <div className="me__record">
+                <div className="myEmail me__margin">
+                  <p className="myEmail__title record__mark">EMAIL</p>
+                  <p className="about__small">chaevivin@gmail.com</p>
                 </div>
-                <div class="myGithub me__margin">
-                  <p class="myGithub__title record__mark">GITHUB</p>
+                <div className="myGithub me__margin">
+                  <p className="myGithub__title record__mark">GITHUB</p>
                   <a href="https://github.com/chaevivin" target="blank">
-                    <p class="about__small">https://github.com/chaevivin</p>
+                    <p className="about__small">https://github.com/chaevivin</p>
                   </a>
                 </div>
-                <div class="myBlog me__margin">
-                  <p class="myBlog__title record__mark">BLOG</p>
+                <div className="myBlog me__margin">
+                  <p className="myBlog__title record__mark">BLOG</p>
                   <a href="https://velog.io/@chaevivi" target="blank">
-                    <p class="about__small">https://velog.io/@chaevivi</p>
+                    <p className="about__small">https://velog.io/@chaevivi</p>
                   </a>
                 </div>
-                <div class="school me__margin">
-                  <p class="school__title record__mark">SCHOOL</p>
-                  <img src="img/school_logo.png" alt="" class="school__logo" />
-                  <div class="school__description">
-                    <p class="school__name about__small">
+                <div className="school me__margin">
+                  <p className="school__title record__mark">SCHOOL</p>
+                  <img src="img/school_logo.png" alt="" className="school__logo" />
+                  <div className="school__description">
+                    <p className="school__name about__small">
                       한국외국어대학교 글로벌캠퍼스 컴퓨터공학과
                     </p>
-                    <p class="school__nameEng">
+                    <p className="school__nameEng">
                       Hankuk University of foreign studies Global campus
                       Computer Science
                     </p>
-                    <p class="school__period about__micro">
+                    <p className="school__period about__micro">
                       2020/03 ~ 2023/02 (졸업예정)
                     </p>
                   </div>
                 </div>
-                <div class="certification">
-                  <p class="certification__title record__mark">
+                <div className="certification">
+                  <p className="certification__title record__mark">
                     CERTIFICATION & AWARDS
                   </p>
-                  <img src="img/toeic_img.png" alt="" class="toeic__logo" />
-                  <div class="toeic__description">
-                    <p class="toeic__score about__small">Toeic score : 845</p>
-                    <p class="toeic__period about__micro">2021/11/21</p>
+                  <img src="img/toeic_img.png" alt="" className="toeic__logo" />
+                  <div className="toeic__description">
+                    <p className="toeic__score about__small">Toeic score : 845</p>
+                    <p className="toeic__period about__micro">2021/11/21</p>
                   </div>
-                  <img src="img/school_logo.png" alt="" class="school__logo" />
-                  <div class="awards__description">
-                    <p class="awards__host about__small">
+                  <img src="img/school_logo.png" alt="" className="school__logo" />
+                  <div className="awards__description">
+                    <p className="awards__host about__small">
                       2022 HUFS 오픈소스 협업 HackaLearn
                     </p>
-                    <p class="awards__name about__micro">
+                    <p className="awards__name about__micro">
                       'UX가 가장 뛰어난 애플리케이션' 수상
                     </p>
                   </div>
@@ -71,14 +71,14 @@ export default function AboutCard() {
               </div>
             </div>
           </div>
-          <div class="about__back">
-            <div class="about__backBox">
-              <div class="skill__frontEnd">
-                <p class="skill__fe__title">🛠️ Front-end</p>
-                <p class="skill__fe__skillSet">
+          <div className="about__back">
+            <div className="about__backBox">
+              <div className="skill__frontEnd">
+                <p className="skill__fe__title">🛠️ Front-end</p>
+                <p className="skill__fe__skillSet">
                   HTML | CSS | JavaScript | React
                 </p>
-                <div class="skill__fe__content">
+                <div className="skill__fe__content">
                   <p>
                     ▪️ <b>웹표준, HTML5, CSS3</b>를 이용하여 사이트를 구현할 수
                     있습니다.
@@ -102,12 +102,12 @@ export default function AboutCard() {
                   </p>
                 </div>
               </div>
-              <div class="skill__cooperation">
-                <p class="skill__coo__title">🤝 Cooperation</p>
-                <p class="skill__coo__skillSet">
+              <div className="skill__cooperation">
+                <p className="skill__coo__title">🤝 Cooperation</p>
+                <p className="skill__coo__skillSet">
                   Git | Github | Slack | Discord | Figma
                 </p>
-                <div class="skill__coo__content">
+                <div className="skill__coo__content">
                   <p>
                     ▪️ Github에서 <b>pull request</b>를 보낼 수 있고 다른 사람의
                     코드를 <b>Fetch하고 merge</b>를 할 수 있습니다.
