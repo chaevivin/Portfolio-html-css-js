@@ -445,7 +445,7 @@ p {
   margin: 25px;
 }
 
-.work__group li, .work__personal li {
+.openModalBtn1 {
   width: 250px;
   height: 300px;
   border: 1px solid var(--color-brown);
@@ -672,13 +672,13 @@ p {
   justify-content: center;
 }
 
-.contact__links i {
+.contact__icon {
   transition: all var(--animation-duration) ease-in;
   color: var(--color-white);
   margin: 10px;
 }
 
-.contact__links i:hover {
+.contact__icon:hover {
   transform: scale(1.2);
   color: var(--color-brown);
 }
