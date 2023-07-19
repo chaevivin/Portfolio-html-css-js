@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>React로 수정중</h1>
+    <h1>My First Portfolio</h1>
     <br>
     <img src="https://user-images.githubusercontent.com/83055813/215501680-3cfe536a-0809-47aa-adf4-9ced73c0c4a4.gif" />
     <p> Update ver.</p>
@@ -114,6 +114,12 @@
 
 <br>
 
+(9) 모바일 ver.
+- CSS Media query 사용하여 모바일 버전 구현
+- 모바일 버전은 화면 가로 768px부터 적용
+
+<br>
+
 <h2>3. Issues</h2>
 Issues that occurred while creating the project.
 
@@ -135,13 +141,5 @@ Issues that occurred while creating the project.
 (3) 'Contact' button error
 - Issue : 'Home' 섹션에 있는 'Contact me' 버튼을 클릭했을 때 'Contact' 버튼 활성화 되지 않음.
 - Solution : Javascript에서 'selectNavItem' 함수를 메뉴의 버튼을 클릭했을 때 작동할 수 있도록 했었는데, 'scrollIntoView' 함수 안에 구현.
-
-<br>
-
-<h2>4. What I learned.</h2>
-
-<p>
-    내가 만든 첫 포트폴리오 사이트라 의미가 깊다. 메인 색 선택, 배경화면 디자인부터 기능 구현까지 정성을 쏟지 않은 부분이 없다. 잘 구현되지 않는 부분, 어려운 부분도 많았지만 그 이슈들을 해결함으로써 뿌듯했고 스스로 성장했다는 것을 느꼈다. 다음에는 팀원들과 함께하는 팀 프로젝트를 꼭 해보고 싶다.
-</p>
 
 <br>

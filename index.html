@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chaevivin's Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Chaevivin" />
+    <script
+      src="https://kit.fontawesome.com/6c18645b01.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <a href="#">C:HAEVIVIN</a>
+
+        <!-- Toggle button -->
+        <button class="navbar__toggle-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <!-- <li class="navbar__menu__item" data-link="#skills">Skills</li> -->
+        <li class="navbar__menu__item" data-link="#myWork">My Work</li>
+        <!-- <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li> -->
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img
+          src="img/profile.jpg"
+          alt="chaevivin's profile photo"
+          class="home__avatar"
+        />
+        <h1 class="home__title">Welcome to my vivid coding life!</h1>
+        <h2 class="home__description">
+          Developer with strong attention to detail.
+        </h2>
+        <h3>디테일에 강한 개발자 정채빈입니다.</h3>
+        <button class="home__contact">Contact me</button>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p class="about__sub">
+        I'm an aspiring Front-end student. I'm really passionate and love coding
+        & solving problems.
+      </p>
+      <p class="about__hover">hover ID Card 👇</p>
+      <!-- <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="major__title">HTML</div>
+                <div class="major__description"></div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="major__title">CSS</div>
+                <div class="major__description"></div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <div class="major__title">JavaScript</div>
+                <div class="major__description"></div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa-brands fa-react"></i>
+                </div>
+                <div class="major__title">React</div>
+                <div class="major__description"></div>
+            </div>
+        </div> -->
+      <div class="about__me">
+        <div class="about__flip">
+          <div class="about__front">
+            <p class="about__title">ID CARD</p>
+            <hr class="about__hr" />
+            <div class="about__frontBox">
+              <div class="info__box">
+                <div class="me__img"></div>
+                <div class="me__info">
+                  <p class="me__info__name about__small">정채빈</p>
+                  <p class="me__info__nameEng">Jeong Chae-Been</p>
+                </div>
+              </div>
+              <div class="me__record">
+                <div class="myEmail me__margin">
+                  <p class="myEmail__title record__mark">EMAIL</p>
+                  <p class="about__small">chaevivin@gmail.com</p>
+                </div>
+                <div class="myGithub me__margin">
+                  <p class="myGithub__title record__mark">GITHUB</p>
+                  <a href="https://github.com/chaevivin" target="blank">
+                    <p class="about__small">https://github.com/chaevivin</p>
+                  </a>
+                </div>
+                <div class="myBlog me__margin">
+                  <p class="myBlog__title record__mark">BLOG</p>
+                  <a href="https://velog.io/@chaevivi" target="blank">
+                    <p class="about__small">https://velog.io/@chaevivi</p>
+                  </a>
+                </div>
+                <div class="school me__margin">
+                  <p class="school__title record__mark">SCHOOL</p>
+                  <img src="img/school_logo.png" alt="" class="school__logo" />
+                  <div class="school__description">
+                    <p class="school__name about__small">
+                      한국외국어대학교 글로벌캠퍼스 컴퓨터공학과
+                    </p>
+                    <p class="school__nameEng">
+                      Hankuk University of foreign studies Global campus
+                      Computer Science
+                    </p>
+                    <p class="school__period about__micro">
+                      2020/03 ~ 2023/02 (졸업예정)
+                    </p>
+                  </div>
+                </div>
+                <div class="certification">
+                  <p class="certification__title record__mark">
+                    CERTIFICATION & AWARDS
+                  </p>
+                  <img src="img/toeic_img.png" alt="" class="toeic__logo" />
+                  <div class="toeic__description">
+                    <p class="toeic__score about__small">Toeic score : 845</p>
+                    <p class="toeic__period about__micro">2021/11/21</p>
+                  </div>
+                  <img src="img/school_logo.png" alt="" class="school__logo" />
+                  <div class="awards__description">
+                    <p class="awards__host about__small">
+                      2022 HUFS 오픈소스 협업 HackaLearn
+                    </p>
+                    <p class="awards__name about__micro">
+                      'UX가 가장 뛰어난 애플리케이션' 수상
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about__back">
+            <div class="about__backBox">
+              <div class="skill__frontEnd">
+                <p class="skill__fe__title">🛠️ Front-end</p>
+                <p class="skill__fe__skillSet">
+                  HTML | CSS | JavaScript | React
+                </p>
+                <div class="skill__fe__content">
+                  <p>
+                    ▪️ <b>웹표준, HTML5, CSS3</b>를 이용하여 사이트를 구현할 수
+                    있습니다.
+                  </p>
+                  <p>
+                    ▪️ CSS Media Query를 이용하여 <b>반응형 웹</b>을 만들 수
+                    있습니다.
+                  </p>
+                  <p>
+                    ▪️ <b>Mobile First</b>로 웹사이트를 구현한 경험이 있습니다.
+                  </p>
+                  <p>▪️ JavaScript에서 <b>DOM 조작</b>을 할 수 있습니다.</p>
+                  <p>▪️ <b>Axios를 사용하여 백엔드와 통신</b>할 수 있습니다.</p>
+                  <p>
+                    ▪️ React로 <b>SPA (Single Page Application)</b> 를 개발한
+                    경험이 있습니다.
+                  </p>
+                  <p>
+                    ▪️ React에서 useEffect, useState 등
+                    <b>React Hook을 사용</b>할 수 있습니다.
+                  </p>
+                </div>
+              </div>
+              <div class="skill__cooperation">
+                <p class="skill__coo__title">🤝 Cooperation</p>
+                <p class="skill__coo__skillSet">
+                  Git | Github | Slack | Discord | Figma
+                </p>
+                <div class="skill__coo__content">
+                  <p>
+                    ▪️ Github에서 <b>pull request</b>를 보낼 수 있고 다른 사람의
+                    코드를 <b>Fetch하고 merge</b>를 할 수 있습니다.
+                  </p>
+                  <p>▪️ Git을 사용하여 <b>버전 관리</b>를 할 수 있습니다.</p>
+                  <p>
+                    ▪️ <b>Git commit 메시지 규칙</b>을 지켜 commit 메시지를
+                    작성할 수 있습니다.
+                  </p>
+                  <p>
+                    ▪️ Slack과 Discord로 <b>다른 개발자와 소통하고 협업</b>한
+                    경험이 있습니다.
+                  </p>
+                  <p>
+                    ▪️ Figma로 <b>기획자, 디자이너와 소통하고 협업</b>한 경험이
+                    있습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My work -->
+    <section id="myWork" class="section">
+      <div class="section__container">
+        <h1>My Work</h1>
+        <h3>Projects</h3>
+        <div class="work__group">
+          <h2>GROUP PROJECTS</h2>
+          <p class="work__name">자세한 내용을 보려면 카드를 클릭하세요.</p>
+          <ul class="project__group">
+            <li class="openModalBtn1">
+              <div class="group__project">
+                <div class="img__box">
+                  <img src="./img/project4.png" alt="" class="project__img" />
+                </div>
+                <div class="project__description">
+                    <p class="project__name">네캔만원</p>
+                    <p class="project__content">JavaScript . React</p>
+                </div>
+                </div>
+            </li>
+            <li class="openModalBtn2">
+                <div class="group__project">
+                    <div class="img__box">
+                        <img src="./img/project3.png" alt="" class="project__img" />
+                    </div>
+                    <div class="project__description">
+                        <p class="project__name">놀러와요! 모현의 숲</p>
+                        <div class="project__content">HTML . CSS. JavaScript</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+        <div class="work__personal">
+          <h2>PERSONAL PROJECTS</h2>
+          <p class="work__name">자세한 내용을 보려면 카드를 클릭하세요.</p>
+          <ul class="project__group">
+            <li class="openModalBtn3" data-filter="personal1">
+              <div class="group__project">
+                <div class="img__box">
+                  <img src="./img/project2.png" alt="" class="project__img" />
+                </div>
+                <div class="project__description">
+                  <p class="project__name">포트폴리오</p>
+                  <p class="project__content">HTML . CSS. JavaScript</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="work__modal1 modal__hidden">
+          <button class="closeModalBtn1">x</button>
+          <div class="modal__box1">
+            <div class="project__detail">
+              <div class="modal__title">
+                <img src="./img/spark.png" alt="" class="sparkle" />
+                <h1 class="modal__name">네캔만원</h1>
+                <img src="./img/spark.png" alt="" class="sparkle" />
+              </div>
+              <div class="modal__content">
+                <img src="./img/project4.png" alt="" class="modal__img1" />
+                <div class="modal__description">
+                  <div class="modal__flex">
+                    <p class="modal__mark">CONTRIBUTOR</p>
+                    <p><b>Front-end 2명</b>, Back-end 2명</p>
+                  </div>
+                  <div class="modal__flex">
+                    <p class="modal__mark">FRONT-END</p>
+                    <p>JavaScript . React . PostCSS</p>
+                  </div>
+                  <div class="modal__flex">
+                    <p class="modal__mark">BACK-END</p>
+                    <p>Java . Spring</p>
+                  </div>
+                  <div class="modal__flex">
+                    <p class="modal__mark mark__git">GITHUB</p>
+                    <a href="https://github.com/Central-Heckaton/4can10000won" target="blank"><p>https://github.com/Central-Heckaton/4can10000won</p></a>
+                  </div>
+                  <div class="modal__flex">
+                    <p class="modal__mark">BLOG</p>
+                    <a href="https://velog.io/@chaevivi/회고-네캔만원" target="blank"><p>https://velog.io/@chaevivi/회고-네캔만원</p></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal__detail">
+                <p><b>네캔만원은 편의점 맥주의 다양한 정보를 제공하고 이를 기반으로 한 커뮤니티를 형성하여 맥주 구매 결정에 도움을 주는 서비스입니다.</b>
+                  전국의 편의점은 5만개 이상 존재하고 맥주는 편의점의 주력 판매 물품 중 하나지만, 많은 맥주 종류에 대한 정보의 부재로 구매에 어려움을 겪는 소비자를 위해 기획되었습니다. </p>
+                <p>
+                  기존의 맥주 추천 서비스들은 맥주의 단순한 정보 (맥주 이름, 도수 등)만 제공해주거나, 정보 제공보다 광고 위주인 곳이 대다수입니다. 
+                  <b>네캔만원은 기존 서비스와 차별화를 두기 위해 편의점에서 판매하는 맥주의 다양한 정보 (맥주 종류, 도수, 향, 맛, 설명 등)를 제공하고 많은 사람들과 의견을 나눌 수 있는 리뷰 기능을 추가하여 소통의 장을 마련하였습니다. </b>
+                  그리고 맥주를 종류 (에일, 라거, IPA, 스타우트) 별로 필터링해서 검색할 수 있고, ‘찜하기’ 버튼을 제공하여 사용자가 찜한 맥주 리스트를 관리할 수 있습니다.</p>
+                <p class="modal__detail__title" style="font-size: 20px;"><b>담당 업무</b></p>
+                <p><b>1. 맥주를 종류별로 확인할 수 있는 다중 선택 필터 기능</b></p>
+                <p>
+                  ‘라거’, ‘에일’, ‘IPA’, ‘스타우트’ 4개의 맥주 종류 버튼을 클릭할 때마다 해당하는 맥주 리스트들을 보여주는 기능을 구현하였습니다. 
+                  다중선택이 가능하도록 useCallback을 이용하여 배열에 현재 클릭된 필터를 모아주었습니다.  
+                  클릭된 필터는 배열에 추가되고, 이 배열은 axios로 백엔드에 해당 필터의 맥주 리스트를 요청하고 리스트를 받아오면, 리액트가 컴포넌트를 리렌더링해서 사용자가 필터를 클릭한 순간 바로 리스트를 볼 수 있도록 구현하였습니다.
+                  <a href="https://velog.io/@chaevivi/React-React%EB%A1%9C-%EB%8B%A4%EC%A4%91-%EC%84%A0%ED%83%9D-%ED%95%84%ED%84%B0-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0" target="blank">
+                    블로그에서 더 자세한 내용을 알아보세요.
+                  </a>
+                </p>
+                <p><b>2. 사용자 경험을 바탕으로 한 별점 기능</b></p>
+                <p>
+                  UX를 가장 많이 신경 쓴 기능 중 하나입니다. 
+                  별점 기능에 대한 API가 많이 존재했지만 한 번 클릭한 별을 다시 취소할 수 없다거나, 별점이 소수점 단위까지 기록되어 별을 클릭하면 클릭한 위치까지만 별이 채워지는 등 사용자가 쉽게 사용할 수 없는 부분들이 존재하였습니다.
+                  네캔만원은 기존의 별점 API보다 사용자가 더 쉽고 편리하게 접근할 수 있도록 구현하였습니다.
+                  <a href="https://velog.io/@chaevivi/React-%EB%B3%84%EC%A0%90-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0" target="blank">
+                    블로그에서 더 자세한 내용을 알아보세요.
+                  </a>
+                </p>
+                <p><b>3. 실시간 댓글 기능</b></p>
+                <p>
+                  맥주에 대한 리뷰를 등록하면 ‘리뷰’ 페이지에 실시간으로 리뷰를 볼 수 있도록 하였습니다.  
+                  리뷰는 유튜브 댓글 형식 처럼 구현하였고 다른 사용자들이 대댓글을 달 수 있도록 하였습니다. 
+                  리뷰 (댓글) 오른쪽 하단에 있는 토글 버튼을 누르면 해당 리뷰 (댓글)의 대댓글을 볼 수 있고, 대댓글을 달 수 있는 입력창을 구현하였습니다. 
+                  실시간 댓글 기능은 네캔만원의 핵심 기능(목표)으로 사용자들이 맥주에 대해 평가하고 실시간으로 의견을 공유할 수 있으며, 단순한 설명으로는 얻을 수 없는 정보를 바탕으로 기존 구매자와 사용자가 공감대를 형성하여 새로운 맥주를 시도해볼 수 있는 경험으로 이어질 수 있습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="work__modal2 modal__hidden">
+          <button class="closeModalBtn2">x</button>
+          <div class="modal__box2">
+            <div class="project__detail">
+              <div class="modal__title">
+                <img src="./img/spark.png" alt="" class="sparkle" />
+                <h1 class="modal__name">놀러와요! 모현의 숲</h1>
+                <img src="./img/spark.png" alt="" class="sparkle" />
+              </div>
+              <div class="modal__content">
+                <div class="modal__img2"></div>
+                <div class="modal__description">
+                  <div class="modal__flex">
+                    <p class="modal__mark">CONTRIBUTOR</p>
+                    <p>PM 1명, 기획자 1명, 디자이너 1명, <b>Front-end 1명</b>b, Back-end 3명</p>
+                  </div>
+                  <div class="modal__flex">
+                    <p class="modal__mark">FRONT-END</p>
+                    <p>HTML . CSS. JavaScript</p>
+                  </div>
+                  <div class="modal__flex">
+                    <p class="modal__mark">BACK-END</p>
+                    <p>DJango</p>
+                  </div>
+                  <div class="modal__flex">
+                    <p class="modal__mark mark__git">GITHUB</p>
+                    <a href="https://github.com/hufslion10th/team4_miniproject" target="blank"><p>https://github.com/hufslion10th/team4_<br>miniproject</p></a>
+                  </div>
+                  <div class="modal__flex">
+                    <p class="modal__mark mark__blog">BLOG</p>
+                    <a href="https://velog.io/@chaevivi/회고-놀러와요-모현의-숲" target="blank"><p>https://velog.io/@chaevivi/회고-놀러와요-모현의-숲</p></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal__detail">
+                <p>
+                  <b>놀러와요! 모현의 숲은 한국외대 글로벌캠퍼스에 다양한 동물들이 출연하는 특색을 살린 동물 테스트로 글캠생들의 정체성 확립과 캠퍼스 홍보 효과를 위해 기획되었습니다. </b>
+                  "나라", "직업", "동물"의 3가지 요소로 새로운 동물 캐릭터를 생성합니다. "나라"는 글로벌캠퍼스의 다양성을, "직업"은 학과의 종류를, "동물"은 캠퍼스의 자연환경을 상징합니다. 
+                  테스트 결과는 "(나라)에서 온 (직업)하는 (동물)" 형식으로 표기됩니다. 그리고 사용자를 확보하기 위해 각종 SNS 공유 기능을 추가하고, 최종적으로 CTA를 이용하여 사용자를 메타버스 플랫폼으로 유도하였습니다.
+                </p>
+                <p class="modal__detail__title" style="font-size: 20px;"><b>담당 업무</b></p>
+                <p><b>1. 전반적인 화면 구현</b></p>
+                <p>
+                  프론트엔드를 맡아 프로젝트의 모든 페이지를 구현하였습니다. 
+                  사용자가 스마트폰으로 쉽게 테스트할 수 있도록 모바일 퍼스트(Mobile First), 반응형 웹으로 구현하였습니다.
+                </p>
+                <p><b>2. 아이콘과 함께 움직이는 진행바 (프로그레스바)</b></p>
+                <p>
+                  사용자에게 테스트의 진행 상황을 보여주기 위해 상단에 진행바를 구현하였습니다. 
+                  아이콘과 함께 움직일 수 있도록 CSS의 calc() 함수를 사용하여 페이지가 넘어갈때마다 아이콘의 위치를 변경해 주었습니다.
+                  <a href="https://velog.io/@chaevivi/CSS-CSS%EB%A7%8C-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%95%84%EC%9D%B4%EC%BD%98%EA%B3%BC-%ED%95%A8%EA%BB%98-%EC%9B%80%EC%A7%81%EC%9D%B4%EB%8A%94-%EC%A7%84%ED%96%89%EB%B0%94-%EB%A7%8C%EB%93%A4%EA%B8%B0" target="blank">
+                    블로그에서 더 자세한 내용을 알아보세요.
+                  </a>
+                </p>
+                <p><b>3. SNS 공유 기능</b></p>
+                <p>
+                  서비스의 홍보 효과를 높이기 위해 접근성이 좋은 sns에 공유할 수 있는 기능을 추가하였습니다. 
+                  트위터, 페이스북, 카카오톡에 공유할 수 있으며, 로고가 그려진 버튼을 클릭하면 해당 sns로 테스트가 공유됩니다. 
+                  카카오톡 공유 기능은 JavaScript SDK를 이용한 카카오톡 공유 API를 사용하여 개발하였습니다.
+                </p>
+                <p><b>4. 다양한 분야의 사람들과의 협업</b></p>
+                <p>
+                  프로젝트에 기획자와 디자이너가 참여하여 직접적으로 소통하며 프로젝트를 완성해 나갔습니다. 
+                  기획자와 Slack이나 Notion으로 기획의도와 맞게 테스트 내용을 함께 구성하고, 스크립트를 작성하였습니다. 
+                  디자이너와 Figma를 사용하여 UX에 대한 고민을 기반으로 페이지의 레이아웃을 함께 구성하였습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="work__modal3 modal__hidden">
+          <button class="closeModalBtn3">x</button>
+          <div class="modal__box3">
+            <div class="project__detail">
+              <div class="modal__title">
+                <img src="./img/spark.png" alt="" class="sparkle" />
+                <h1 class="modal__name">포트폴리오</h1>
+                <img src="./img/spark.png" alt="" class="sparkle" />
+              </div>
+              <div class="modal__content">
+                <div class="modal__img3"></div>
+                <div class="modal__description">
+                  <div class="modal__flex">
+                    <p class="modal__mark">CONTRIBUTOR</p>
+                    <p><b>Front-end 1명</b></p>
+                  </div>
+                  <div class="modal__flex">
+                    <p class="modal__mark">FRONT-END</p>
+                    <p>HTML . CSS . JavaScript</p>
+                  </div>
+                  <div class="modal__flex">
+                    <p class="modal__mark">GITHUB</p>
+                    <a href="https://github.com/chaevivin/Portfolio" target="blank"><p>https://github.com/chaevivin/Portfolio</p></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal__detail">
+                <p>
+                  개인 포트폴리오 사이트입니다. 
+                  기본적인 인적사항, 사용할 수 있는 기술 스택, 프로젝트 상세 설명, 깃허브 / 블로그 / 이력서를 볼 수 있는 URL이 포함되어 있습니다. 
+                </p>
+                <p class="modal__detail__title" style="font-size: 20px;"><b>앞으로 추가 및 수정 사항</b></p>
+                <p>▪️ 모든 코드를 React로 변경 ➡ 새로운 포트폴리오 사이트 구현</p>
+                <p>▪️ 반응형 (모바일 ver.) 완성 ➡ 완료</p>
+                <p>▪️ 전반적인 UI/UX 개선 ➡ 완료</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="contact__links">
+        <a href="https://github.com/chaevivin" target="blank">
+          <i class="fa-brands fa-github"></i>
+          <p class="contact__url">GITHUB</p>
+        </a>
+        <a href="https://velog.io/@chaevivi" target="blank">
+          <i class="fas fa-blog"></i>
+          <p class="contact__url">BLOG</p>
+        </a>
+        <a href="https://shy-gardenia-3b6.notion.site/cd2d214fc35743aa97889ae50e3462e7i" target="blank">
+          <i class="fa-solid fa-file"></i>
+          <p class="contact__url">RESUME</p>
+        </a>
+      </div>
+      <p class="contact__right">Copyright © Chaebin Jeong. All rights reserved.</p>
+    </section>
+
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
