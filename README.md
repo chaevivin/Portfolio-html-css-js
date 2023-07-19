@@ -13,7 +13,7 @@
 
 <hr/>
 
-🔗 https://chaevivin.github.io/Portfolio/
+🔗 https://chaevivin.github.io/Portfolio-html-css-js/
 
 </div>
 

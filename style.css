@@ -307,7 +307,7 @@ p {
   width: 140px;
   height: 180px;
   margin-bottom: 20px;
-  background-image: url("../img/avatar.jpg");
+  background-image: url("./img/avatar.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -556,7 +556,7 @@ p {
 .modal__img1 {
   width: 50%;
   height: 250px;
-  background-image: url("../img/project4.png");
+  background-image: url("./img/project4.png");
   background-size: cover;
   border: 1px solid var(--color-brown);
   border-radius: var(--size-border-radius);
@@ -567,7 +567,7 @@ p {
 .modal__img2 {
   width: 50%;
   height: 250px;
-  background-image: url("../img/project3.png");
+  background-image: url("./img/project3.png");
   background-size: cover;
   border: 1px solid var(--color-brown);
   border-radius: var(--size-border-radius);
@@ -578,7 +578,7 @@ p {
 .modal__img3 {
   width: 50%;
   height: 250px;
-  background-image: url("../img/project2.png");
+  background-image: url("./img/project2.png");
   background-size: cover;
   border: 1px solid var(--color-brown);
   border-radius: var(--size-border-radius);
@@ -761,9 +761,13 @@ p {
     border: 1px solid var(--color-brown);
   }
 
+  .about__me p {
+    overflow: auto;
+  }
+
   .about__flip {
     width: 90vw;
-    height: 45rem;
+    height: 47rem;
   }
 
   .about__me {
@@ -806,6 +810,8 @@ p {
 
   .about__frontBox {
     display: block;
+    padding: 60px 25px 40px 20px;
+	  line-height: 1.1rem;
   }
 
   .about__backBox {
@@ -823,11 +829,15 @@ p {
   }
   
   .skill__fe__content {
-    height: 240px;
+    height: 260px;
   }
 
   .skill__coo__content {
-    height: 200px;
+    height: 220px;
+  }
+
+  .school__period {
+    margin-bottom: 1rem;
   }
 
   .about__majors {
