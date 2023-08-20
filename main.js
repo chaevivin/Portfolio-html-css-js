@@ -95,6 +95,16 @@ document.querySelector(".closeModalBtn3").addEventListener("click", (e) => {
     document.querySelector(".work__modal3").classList.add("modal__hidden");
 });
 
+document.querySelector(".openModalBtn4").addEventListener("click", (e) => {
+    console.log("open group project 4");
+    document.querySelector(".work__modal4").classList.remove("modal__hidden");
+});
+
+document.querySelector(".closeModalBtn4").addEventListener("click", (e) => {
+    console.log("close group project 4");
+    document.querySelector(".work__modal4").classList.add("modal__hidden");
+});
+
 // Remove selection from the previous item and select the new one
 // const active = document.querySelector('.category__btn.selected');
 // active.classList.remove('selected');
