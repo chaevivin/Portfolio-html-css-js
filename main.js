@@ -65,55 +65,21 @@ arrowUp.addEventListener('click', () => {
 //     }
 
 // Modal
-document.querySelector(".openModalBtn1").addEventListener("click", (e) => {
-    console.log("open group project 1");
-    document.querySelector(".work__modal1").classList.remove("modal__hidden");
-});
+for (let i = 1; i <= 5; i++) {
+    const openBtn = document.querySelector(`.openModalBtn${i}`);
+    const closeBtn = document.querySelector(`.closeModalBtn${i}`);
+    const modal = document.querySelector(`.work__modal${i}`);
 
-document.querySelector(".closeModalBtn1").addEventListener("click", (e) => {
-    console.log("close group project 1");
-    document.querySelector(".work__modal1").classList.add("modal__hidden");
-});
+    openBtn.addEventListener("click", () => {
+        console.log(`open group project ${i}`);
+        modal.classList.remove("modal__hidden");
+    });
 
-document.querySelector(".openModalBtn2").addEventListener("click", (e) => {
-    console.log("open group project 2");
-    document.querySelector(".work__modal2").classList.remove("modal__hidden");
-});
-
-document.querySelector(".closeModalBtn2").addEventListener("click", (e) => {
-    console.log("close group project 2");
-    document.querySelector(".work__modal2").classList.add("modal__hidden");
-});
-
-document.querySelector(".openModalBtn3").addEventListener("click", (e) => {
-    console.log("open group project 3");
-    document.querySelector(".work__modal3").classList.remove("modal__hidden");
-});
-
-document.querySelector(".closeModalBtn3").addEventListener("click", (e) => {
-    console.log("close group project 3");
-    document.querySelector(".work__modal3").classList.add("modal__hidden");
-});
-
-document.querySelector(".openModalBtn4").addEventListener("click", (e) => {
-    console.log("open group project 4");
-    document.querySelector(".work__modal4").classList.remove("modal__hidden");
-});
-
-document.querySelector(".closeModalBtn4").addEventListener("click", (e) => {
-    console.log("close group project 4");
-    document.querySelector(".work__modal4").classList.add("modal__hidden");
-});
-
-document.querySelector(".openModalBtn5").addEventListener("click", (e) => {
-    console.log("open group project 5");
-    document.querySelector(".work__modal5").classList.remove("modal__hidden");
-});
-
-document.querySelector(".closeModalBtn5").addEventListener("click", (e) => {
-    console.log("close group project 5");
-    document.querySelector(".work__modal5").classList.add("modal__hidden");
-});
+    closeBtn.addEventListener("click", () => {
+        console.log(`close group project ${i}`);
+        modal.classList.add("modal__hidden");
+    });
+}
 
 
 // Remove selection from the previous item and select the new one
