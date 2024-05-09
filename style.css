@@ -394,7 +394,7 @@ p {
 
 .skill__fe__skillSet , .skill__coo__skillSet {
   padding: 5px;
-  width: 250px;
+  width: 270px;
   font-size: var(--font-micro);
   border: 1px solid var(--color-brown);
   border-radius: var(--size-border-radius);
