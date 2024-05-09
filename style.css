@@ -179,6 +179,10 @@ p {
   height: 250px;
   border-radius: 50%;
   border: 1.5px solid var(--color-brown);
+  background-image: url("./img/profile.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
 }
 
 .home__title,
