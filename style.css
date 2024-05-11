@@ -918,12 +918,14 @@ p {
     display: block;
   }
 
-  .openModalBtn1, .openModalBtn2, .openModalBtn3, .openModalBtn4 {
+  .openModalBtn1, .openModalBtn2, .openModalBtn3, 
+  .openModalBtn4, .openModalBtn5 {
     margin: auto;
     margin-bottom: 1.5rem;
   }
 
-  .modal__box1, .modal__box2, .modal__box3, .modal__box4 {
+  .modal__box1, .modal__box2, .modal__box3, 
+  .modal__box4, .modal__box5 {
     width: 90vw;
     height: 60rem;
     overflow: scroll;
@@ -947,7 +949,8 @@ p {
   }
 
   .modal__img1, .modal__img2, 
-  .modal__img3, .modal__img4, .modal__description {
+  .modal__img3, .modal__img4, 
+  .modal__img5, .modal__description {
     width: 100%;
     margin-bottom: 1.5rem;
     background-position: center;
